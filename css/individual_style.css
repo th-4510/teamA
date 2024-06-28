@@ -1,0 +1,228 @@
+/* ヘッダー全体のスタイル */
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #EAF2FD;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* ロゴのスタイル */
+.logo {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+/* ナビゲーションバーのスタイル */
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-lists {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-lists__list {
+    margin: 10px 0;
+}
+
+.nav-lists__list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #404E1B;
+    font-size: 1.7em;
+    display: block;
+    padding: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-lists__list a:hover {
+    color: #007BFF;
+}
+
+
+
+/* タイトル */
+.title-contents {
+    height: 80px;
+    width: 75%;
+    padding: 20px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between; /* 横並びにして両端揃え */
+    align-items: center;
+    text-align: center; /*テキストを中央揃え*/
+    border-bottom: 3px solid black; /*黒い下線*/
+
+}
+
+.title-contents p{
+    font-size: 2.2em; /* 大きなフォントサイズ */
+    font-weight: bold; /* 太字 */
+    padding-bottom: 10px; /* 下線とテキストの間のスペース */
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+
+/* メンバーリスト */
+.member-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-list li {
+    margin-right: 10px;
+}
+
+.member-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #404E1B;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.member-list li a:hover {
+    color: #007BFF;
+}
+
+/* メイン（上のタイトル除く）*/
+.all-contents{
+    background-color: #FAF4EB;
+    display: flex;
+    width: 75%;
+   
+}
+
+/* 左側画像 */
+.left-contents {
+
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-view {
+    width: 90%;
+    padding: 10px; /* ボーダーと画像の間にスペースを確保 */
+    box-sizing: border-box; /* パディングを含むようにボックスサイズを調整 */
+    border: 5px solid #007BFF; /* ボーダースタイルの追加 */
+    border-radius: 15px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を演出 */
+    background: linear-gradient(135deg, #f0f0f0, #d9e2f3); /* 背景にグラデーションを追加 */
+}
+
+.member-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block; /* 画像をブロック要素に */
+    border-radius: 10px; /* 画像の角を少し丸くする */
+}
+
+/* 右側メインコンテンツ */
+.right-contents {
+    width: 60%;
+    height: 100%;
+
+    flex-direction: column; /* 縦並びにするための設定 */
+    justify-content: flex-start; /* 上部に配置 */
+    align-items: center; /* 中央揃え */
+    padding: 80px 20px 20px;
+    position: relative; /* 相対配置を追加 */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content {
+    margin: 0 15px; /* 名前と地元の間に30pxの間隔を確保 */
+    /* font-weight: bold; */
+    font-size: 1.5em; /* 読みやすいフォントサイズに調整 */
+    padding: 10px 20px; /* 内側のスペースを確保 */
+    border: 2px solid #007BFF; /* ボーダースタイルの追加 */
+    border-radius: 10px; /* 角を丸くする */
+    background-color: #EAF2FD; /* 背景色を追加 */
+}
+
+/* 質問＆回答 */
+.interview-wrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.interview-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 40px;
+}
+
+.answer {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #EAF2FD;
+}
+
+.answer p{
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+
+/* ボタンのスタイル */
+.back {
+    display: flex;
+   justify-content: center; 
+}
+
+.back-button {
+    
+  
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-5px);
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-right: 25%;
+    height: 60px;
+    background-color: #eaf2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンバー</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/history_style.css">
+    <script src="saitama_quiz.js"></script>
+  </head>
+  <body>
+    <!--ヘッダー-->
+    <header class="header">
+      <div class="heading">
+        <a href="index.html">
+          <img src="../images/logo.jpeg" alt="地元に帰りたい" class="logo">
+        </a>
+      </div>
+      <!--ヘッダーリスト-->
+      <div class="navbar">
+        <ul class="nav-lists">
+          <li class="nav-lists__list"><a href="../gourmet.html">グルメ</a></li>
+          <li class="nav-lists__list"><a href="../spot.html">スポット</a></li>
+          <li class="nav-lists__list"><a href="../member.html">メンバー</a></li>
+          <li class="nav-lists__list"><a href="../history.html">歴史</a></li>
+        </ul>
+      </div>
+    </header>
+
+<div class="quiz-body">
+    <div class="quizzes-container">
+        <h1>クイズ</h1>
+        <div class="quiz-container">
+            <h2>第1問</h2>
+            <p>埼玉県の国府が置かれたのはいつの時代でしょう？</p>
+            <form id="quiz-1">
+                <input name="answer" type="radio" value="a">平安時代</input>
+                <input name="answer" type="radio" value="b">奈良時代</input>
+                <input name="answer" type="radio" value="c">大化の改新</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
+        </div>
+
+        <div class="quiz-container">
+            <h2>第2問</h2>
+            <p>徳川家康が関東に移封されたのは何年でしょう？</p>
+            <form id="quiz-2">
+                <input name="answer" type="radio" value="a">1582年</input>
+                <input name="answer" type="radio" value="b">1590年</input>
+                <input name="answer" type="radio" value="c">1603年</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz2();">回答する</button>
+        </div>
+
+        <div class="quiz-container">
+            <h2>第3問</h2>
+            <p>さいたま市が発足したのは何年でしょう？</p>
+            <form id="quiz-3">
+                <input name="answer" type="radio" value="a">1999年</input>
+                <input name="answer" type="radio" value="b">2001年</input>
+                <input name="answer" type="radio" value="c">2005年</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>
+        </div>
+
+        <div id="score-container">
+            <p id="score-message"></p>
+        </div>
+        <button class="btn-score" type="button" onclick="showScore();">合計得点をみる</button>
+    </div>
+</div>
+
+
+      <!-- フッター -->
+      <footer class="footer">
+        <div class="copyright">TEAM_A</div>
+    </footer>
+    
+  </body>
+</html>

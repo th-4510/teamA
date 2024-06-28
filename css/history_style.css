@@ -54,7 +54,7 @@ body {
 }
 
 .zentai {
-  width: 74vw;
+  width: 75vw;
   animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
   animation-duration: 3.5s;
   animation-fill-mode: forwards;
@@ -260,4 +260,14 @@ tbody {
   margin: 20px auto;
   font-family: serif;
   background-color: white;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  height: 60px;
+  background-color: #eaf2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

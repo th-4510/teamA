@@ -132,8 +132,8 @@
   .slide {
     position: relative;
     overflow: hidden;
-    width: 1150px;
-    height: 745px;
+    width: 75vw;
+    height: 100vh;
     margin-bottom: 40px;
     background: black;
     
